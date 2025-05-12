@@ -1,0 +1,152 @@
+/* Reset & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  nav.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional */
+  }
+
+  nav.scrolled h1 {
+    color: black;
+  }
+  
+  nav.scrolled ul li a {
+    color: black;
+  }
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+nav h1 {
+    font-size: 28px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: darkgray;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/TataSteelChess2018-1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-text hr {
+    width: 80px;
+    height: 5px;
+    background: gold;
+    border: none;
+    margin: 20px auto;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Main Content */
+.article {
+    margin-top: 100px;
+    padding: 40px 0;
+}
+
+.article h1, .article h3, .article p {
+    color: #333;
+}
+.info-section {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 900px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc; /* Divider line */
+}
+
+.info-section:last-of-type {
+    border-bottom: none; /* No divider on last one */
+}
+.text-1{
+    margin-left:40px;
+    margin-bottom:50px;
+}
+.text-2{
+    margin-left:40px;
+    margin-bottom:50px;
+}
+.text-3{
+    margin-left:40px;
+    margin-bottom:50px;
+}
+.text-4{
+    margin-left:40px;
+    margin-bottom:50px;
+    padding: 20px 10px;
+    display: inline block; border-bottom: 1px solid #ccc; /* Divider line */
+}
+.image-grid .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between images */
+    margin: 20px 0;
+  }
+  
+  .image-grid img {
+    width: 300px;   /* adjust as needed */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+  
+
+
+
